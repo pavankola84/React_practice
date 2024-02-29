@@ -1,6 +1,8 @@
+// App.js
 import React from "react";
 import photo1 from "./photo1.svg";
 import "./App.css";
+import Options from "./components/Options";
 
 function App() {
   return (
@@ -18,45 +20,10 @@ function App() {
         >
           Tech<b>sophy</b>
         </a>
-        <div className="options">
-          <LinkCard
-            href="https://techsophy.com/txp/"
-            title="TXP"
-            description="Explore TXP"
-          />
-          <LinkCard
-            href="https://techsophy.com/chase/"
-            title="CHASE"
-            description="Explore CHASE"
-          />
-          <LinkCard
-            href="https://techsophy.com/cns/"
-            title="CNS"
-            description="Explore CNS"
-          />
-        </div>
-
-        <div className="options">
-          <nav></nav>
-        </div>
+        <Options />
+        
       </header>
     </div>
-  );
-}
-
-function LinkCard({ href, title, description }) {
-  return (
-    <a
-      className="option-link"
-      href={href}
-      // target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="card">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </a>
   );
 }
 
