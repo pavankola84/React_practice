@@ -66,3 +66,40 @@ code
 {
   color: white;
 }
+
+.cl_count  {
+  background-color: #2ca9cc;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.cl_count:hover {
+  background-color: #16819e;
+  transform: translateY(-4px); /* Smoother translateY transformation */
+}
+
+.show_ops
+{
+  background-color: #2ca9cc;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show_ops:hover {
+  background-color: #16819e;
+  transform: translateY(-4px); /* Smoother translateY transformation */
+}
+
+.small-text {
+  font-size: 18px;
+}

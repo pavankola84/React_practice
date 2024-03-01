@@ -4,6 +4,13 @@ import "./App.css";
 import Options from "./components/Options";
 
 function App() {
+  
+  const [showLists, setShowLists] = useState(true);
+
+  const toggleShowLists = () => {
+    setShowLists(!showLists);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +26,10 @@ function App() {
         >
           Tech<b>sophy</b>
         </a>
-        <Options />
+        <Options showLists={showLists}/>
+        <button className="show_ops toggle-button" onClick={toggleShowLists}>
+          {showLists ? "Hide Lists" : "Show Lists"}
+        </button>
       </header>
     </div>
   );
