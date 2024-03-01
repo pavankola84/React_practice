@@ -1,4 +1,3 @@
-// Options.js
 import React from "react";
 import LinkCard from "./LinkCard"; // Import LinkCard component
 

@@ -1,5 +1,4 @@
-// App.js
-import React from "react";
+import React, { useState } from "react";
 import photo1 from "./photo1.svg";
 import "./App.css";
 import Options from "./components/Options";
@@ -15,13 +14,12 @@ function App() {
         <a
           className="App-link"
           href="https://techsophy.com/"
-          // target="_blank"
+          target="_blank"
           rel="noopener noreferrer"
         >
           Tech<b>sophy</b>
         </a>
         <Options />
-        
       </header>
     </div>
   );
